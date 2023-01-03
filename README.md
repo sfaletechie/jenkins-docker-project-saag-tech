@@ -27,7 +27,7 @@ Local : /root/.m2/
 
 Centeral : https://repo.maven.apache.org/maven2/org/
 
--------------------------------------------
+---------------------------------------------
 yum install git tree -y
 
 sudo amazon-linux-extras install java-openjdk11 -y
