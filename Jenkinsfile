@@ -20,6 +20,7 @@ pipeline {
             steps {
                 sshagent(credentials: ['sshUserPrivateKey']) {
                     sh 'scp /etc/hosts root@192.168.29.22:/tmp'
+                    sh 'scp target/*.war root@192.168.29.22:/var/lib/tomcat/webapps/'
                 }
         }
 
