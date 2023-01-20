@@ -11,5 +11,11 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('packgae') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
     }
 }
